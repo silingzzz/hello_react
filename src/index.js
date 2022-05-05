@@ -1,17 +1,15 @@
+// index.js是入口文件
+
+// 引入react核心
 import React from 'react';
+// 引入reactDOM库
 import ReactDOM from 'react-dom/client';
+// 引入全局样式
 import './index.css';
+// 引入APP组件
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+// 渲染app组件到页面
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<App />);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
